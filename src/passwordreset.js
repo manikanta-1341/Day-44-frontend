@@ -11,7 +11,7 @@ export default function Passwordreset() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try{
-            const response = await axios.post('http://localhost:3000/passwordreset',{
+            const response = await axios.post('https://day-44.herokuapp.com/passwordreset',{
                 email : email
             })
             if(response){
